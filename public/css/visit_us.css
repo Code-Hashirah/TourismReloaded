@@ -2,24 +2,31 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-h2{
-    text-shadow: 1px 1px 1px rgb(175, 4, 4);
+#Body{
+    display: flexbox;
+    background-image: url("/images/islandHD.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.h2{
+    text-shadow: 1px 1px 2px white;
     text-align: center;
 }
 
 #form{
-    background-image: url("../images/islandHD.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid rgb(64, 17, 17);
-    margin: 5px 10px 10px 5px;
-    width: 100%;
+   background-color: rgb(0, 98, 255);
+    margin: auto;
+    opacity: 80%;
+    box-shadow: 10px 10px 20px transparent;
+    border-radius: 2px;
 }
 
 #form > div{
-    margin: 5px 5px 25px 5px ;
+    /* height: 20%; */
+    margin:45px ;
 }
 #flag{
     float: right;
@@ -30,7 +37,15 @@ h2{
     float: right;
     width: 60%;
 }
-
+#Fname, #Lname, #PhoneNo,#date, #place_of_interest, #package, #people{
+    color: black;
+    background: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(195, 201, 212);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 2px;
+}
 #form label{
     font-size: 14px;
     color: white;
@@ -39,23 +54,20 @@ h2{
 }
 #form input, select{
     font-size: 14px;
-    color: rgb(170, 2, 2);
-    border: 1px groove brown;
-    width: auto;
+    color: black;
 }
-.btn{
-    width: auto;
-    align-self: center;
-    font-size: 14px;
-    color: white;
-    background-color: rgb(49, 7, 7);
+
+#Fname:hover, #Lname:hover, #PhoneNo:hover,#date:hover, #place_of_interest:hover, #package:hover, #people:hover{
+    background: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  /* height: 30px; */
 }
-.btn a{
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    border: 2px groove rgb(97, 21, 21);
-}
+
+
 @media screen {
     #form{
         width: auto;
